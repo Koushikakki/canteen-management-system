@@ -13,6 +13,13 @@ export default StyleSheet.create({
 
     },
 
+    cardImage : {
+        width : '50%',
+        height : '80%',
+        borderRadius:15,
+        marginRight: 16,
+    },
+
     
 
 })
