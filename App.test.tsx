@@ -25,4 +25,8 @@ describe("App component",()=>{
         const {getByText} = render(<App/>)
         expect(getByText("breakfast")).toBeOnTheScreen();
     });
+    test("renders the items",()=>{
+        const {getByText} = render(<App/>)
+        expect(getByText("Dosa")).toBeOnTheScreen();
+    });
 })
