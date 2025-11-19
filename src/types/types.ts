@@ -5,4 +5,10 @@ export type Item = {
     title : string,
     price : number,
     image : ImageSourcePropType
-}
+};
+
+export type Section = {
+    id : string,
+    title : string,
+    data : Item[];
+};
