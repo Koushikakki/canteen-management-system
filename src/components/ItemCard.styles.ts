@@ -20,6 +20,24 @@ export default StyleSheet.create({
         marginRight: 16,
     },
 
-    
+    textContainer: {
+        flex: 1,
+        justifyContent: "center",
+        
+    },
+
+    title: {
+        fontSize: 18,
+        fontWeight: "600",
+        marginBottom: 6,
+        color: "#333",
+    },
+
+    price: {
+        fontSize: 16,
+        color: "#1b6edb",
+        fontWeight: "bold",
+        
+    },
 
 })
