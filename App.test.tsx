@@ -1,3 +1,5 @@
+import { render } from "@testing-library/react-native";
+import App from "./App";
 const menuData = [
   {
     id: "s1",
@@ -12,3 +14,10 @@ const menuData = [
     ]
   }
 ]
+
+describe("App component",()=>{
+    test("renders the app heading",()=>{
+        const {getByText} = render(<App/>)
+        expect(getByText("Everest Canteen")).toBeOnTheScreen();
+    })
+})
