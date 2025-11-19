@@ -1,6 +1,7 @@
-import { SectionList, Text, View } from "react-native";
+import { SectionList, StyleSheet, Text, View } from "react-native";
 import { Section } from "../types/types";
 import ItemCard from "./ItemCard";
+import styles from "./SectionLists.styles"
 
 export function SectionLists ({sections}: {sections : Section[]}){
     return(
@@ -9,20 +10,27 @@ export function SectionLists ({sections}: {sections : Section[]}){
 
                 sections={sections}
                 keyExtractor={(item)=> item.id}
-
+                stickySectionHeadersEnabled={true}
                 renderItem={({item})=>(
                     <ItemCard item={item} />
                 )}
 
                 renderSectionHeader={({section})=>(
-                    <Text>{section.title}</Text>
+                    <View style={styles.sectionHeader}>
+                        <Text style={styles.sectionTitle}>{section.title}</Text>
+                    </View>
+                    
                 )
                 }
+                
             />
                 
             
         </View>
     )
 }
+
+
+
 
 export default SectionLists;
