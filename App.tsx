@@ -1,10 +1,11 @@
 import { StyleSheet, Text, View } from 'react-native';
 import SectionLists from './src/components/SectionLists';
+import { menuData } from './src/data/data';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <SectionLists/>
+      <SectionLists sections={menuData}/>
     </View>
   );
 }
