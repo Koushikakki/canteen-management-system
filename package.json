@@ -16,7 +16,8 @@
     "collectCoverageFrom": [
     "src/**/*.{ts,tsx}",
     "!src/**/*.styles.ts",
-    "!src/**/index.ts"
+    "!src/**/index.ts",
+    "App.tsx"
   ]
   },
   "dependencies": {
