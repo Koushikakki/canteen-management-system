@@ -19,5 +19,10 @@ describe("App component",()=>{
     test("renders the app heading",()=>{
         const {getByText} = render(<App/>)
         expect(getByText("Everest Canteen")).toBeOnTheScreen();
-    })
+    });
+
+    test("renders the sections",()=>{
+        const {getByText} = render(<App/>)
+        expect(getByText("breakfast")).toBeOnTheScreen();
+    });
 })
