@@ -1,4 +1,5 @@
-
+import { render } from "@testing-library/react-native";
+import SectionLists from "./SectionLists";
 
 const mockSections = [
   {
@@ -10,4 +11,11 @@ const mockSections = [
   },
 ];
 
-
+describe("SectionList component",()=>{
+    test("sections are rendered or not",()=>{
+        const {getByText} = render(<SectionLists sections={mockSections}/>);
+        expect(getByText("Main Course")).toBeOnTheScreen();
+        expect(getByText("Pizza")).toBeOnTheScreen();
+        
+    })
+})
