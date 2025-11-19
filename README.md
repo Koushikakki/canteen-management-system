@@ -1,14 +1,41 @@
-## Canteen Management System – Menu Feature Branch
+## Canteen Management System
 
-This branch adds a Menu feature to the Canteen Management System, allowing users to browse canteen items organized by sections. It also includes unit tests for key components to ensure proper rendering.
+This Canteen Management System is a simple, scrollable menu app for browsing canteen items organized by sections. Each section(Beverages, Breakfast, Main courses, Snacks, Desserts) displays items as cards containing an image, title, and price.
 
 ## Features
 
-1. ItemCard Component
-- Displays individual items as cards with title, price, and image.
+- Sectioned Menu : Beverages, Breakfast, Main Courses, Snacks, and Desserts.
+- Each item shows : image, title and Price.
+- sections stacked one after another so users scroll down to explore.
 
-2. SectionLists Component
-- Displays menu items uch as Beverages, Breakfast, Main Course, Snacks, and Desserts.
+## Tech stack
 
-3. Unit Testing
-- Add tests for the app
+- React-Native
+
+## Prerequirements
+
+- Andriod Studio (for Android simulation).
+- Xcode (for ios smulation).
+- Expo
+
+
+## How to Install
+
+1. Clone the repository.
+
+` git clone https://github.com/Koushikakki/canteen-management-system.git `
+
+2. Move to the project directory.
+
+`cd canteen-management-system`
+
+3. Run the code.
+
+ `npm run start`
+
+ or
+
+ `npx expo start`
+
+for andriod development press 'a'.
+for ios development press 'i'.
