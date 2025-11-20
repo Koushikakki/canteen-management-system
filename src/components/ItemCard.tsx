@@ -5,7 +5,7 @@ import styles from "./ItemCard.styles"
 export function ItemCard ({item} : {item : Item}) {
     return(
         <View style={styles.card}>
-            <Image source={item.image} style ={styles.cardImage} />
+            <Image source={item.image} style ={styles.cardImage} testID="item-image"/>
             <View style={styles.textContainer}>
                 <Text style={styles.title}>{item.title}</Text>
                 <Text style={styles.price}>{item.price}</Text>
