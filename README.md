@@ -23,19 +23,26 @@ This Canteen Management System is a simple, scrollable menu app for browsing can
 
 1. Clone the repository.
 
-` git clone https://github.com/Koushikakki/canteen-management-system.git `
-
+```bash 
+git clone https://github.com/Koushikakki/canteen-management-system.git
+```
 2. Move to the project directory.
 
-`cd canteen-management-system`
+```bash
+cd canteen-management-system
+```
 
 3. Run the code.
 
- `npm run start`
+ ```bash
+ npm run start
+```
 
  or
 
- `npx expo start`
+ ```bash
+ npx expo start
+```
 
 for andriod development press 'a'.
 for ios development press 'i'.
